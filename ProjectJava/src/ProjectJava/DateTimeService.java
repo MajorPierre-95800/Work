@@ -1,6 +1,7 @@
 package ProjectJava;
 
 import java.util.Calendar;
+
 import java.util.Date;
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -49,11 +50,10 @@ public class DateTimeService
 	      {
 	        e.printStackTrace();
 	      }
-	  
+	  }
 	    temp[1] = d.toString();
      
-	    return temp;
-      }	
+	    return temp;	
    }
 }
    

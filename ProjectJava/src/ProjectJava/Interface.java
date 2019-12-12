@@ -1,29 +1,40 @@
 package ProjectJava;
+import java.awt.Color;
 
-import java.awt.*;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
+//import javax.swing.JButton;
+//import java.awt.geom.Line2D;
+//import javax.swing.*;
+//import java.awt.Graphics;
+//import java.awt.event.ActionEvent;
+//import java.awt.event.ActionListener;
 
-@SuppressWarnings("serial")
 
-public class Interface extends Frame {
-		
+public class Interface extends JFrame{
+
 	public Interface() {
-		JFrame f = new JFrame();
-		f.setTitle("Graphic Interface:");
-		f.setSize(1000,1000);
-		Choice c = new Choice();
-		c.addItem("Client 1");
-		c.addItem("Client 2");
-		c.addItem("Client 3");
-		this.add(c);
-
-
-		f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        f.setVisible(true);
-	}
 		
-	public static void main(String args[]) {
+		//Initialization of my interface
+		JFrame f = new JFrame();
+		f.setTitle("Assignement EE402");
+		f.setSize(750,750);
+		f.setLocationRelativeTo(null);
+		
+		//Color definition of my interface
+		JPanel p = new JPanel();
+		p.setBackground(Color.DARK_GRAY);
+		f.setContentPane(p);
+		
+		
+		
+		
+		f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		f.setVisible(true);
+	}
+	
+	public static void main (String[] args) {
+		
 		new Interface();
 	}
 }

@@ -37,13 +37,13 @@ public class Client {
 
     private void getDate() {
     	String theDateCommand = "GetDate"; 
-        String theDateAndTime;
+        String[] theDateAndTime = new String[2];
     	System.out.println("01. -> Sending Command (" + theDateCommand + ") to the server...");
     	this.send(theDateCommand);
     	try{
-    		theDateAndTime = (String) receive();
+    		theDateAndTime = (String[]) receive();
     		System.out.println("05. <- The Server responded with: ");
-    		System.out.println("    <- " + theDateAndTime +"\n"+ theDateAndTime);
+    		System.out.println("    <- " + theDateAndTime[0] +"\n"+ theDateAndTime[1]);
     	}
     	catch (Exception e){
     		System.out.println("XX. There was an invalid object sent back from the server");

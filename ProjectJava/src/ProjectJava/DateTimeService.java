@@ -34,6 +34,7 @@ public class DateTimeService
 	  {
 	        e.printStackTrace();
 	  } 
+	  	System.out.println(temp[0]);
 	    temp[1] = d.toString();
      
 	    return temp;

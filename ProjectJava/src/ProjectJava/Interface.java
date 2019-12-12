@@ -23,12 +23,11 @@ public class Interface extends Frame {
 		
 		JPanel p= new JPanel();
 		p.setBackground(Color.DARK_GRAY);
+		p.setVisible(true);
 		
 		
 		
-		
-		f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);dir
-		
+		f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         f.setVisible(true);
 	}
 		

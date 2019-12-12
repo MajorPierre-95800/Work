@@ -34,9 +34,26 @@ public class DateTimeService
 	  {
 	        e.printStackTrace();
 	  } 
-	  	System.out.println(temp[0]);
+	  finally 
+	  {
+	      try 
+	      {
+	        if (file1 != null) {
+	        	file1.close();
+	        }
+	        if (file2 != null) {
+	        	file2.close();
+	        }
+	      } 
+	      catch (IOException e) 
+	      {
+	        e.printStackTrace();
+	      }
+	  
 	    temp[1] = d.toString();
      
 	    return temp;
-   }	
+      }	
+   }
 }
+   

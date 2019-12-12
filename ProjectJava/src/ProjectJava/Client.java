@@ -43,10 +43,8 @@ public class Client {
     	try{
     		theDateAndTime = (String[]) receive();
     		System.out.println("05. <- The Server responded with: ");
-    		String s = null;
-    		s = theDateAndTime[0].toString();
-    		int val= Integer.parseInt(s);
-    		System.out.println("    <- " + val +"\n"+ theDateAndTime[1]);
+    		System.out.println("    <- " + theDateAndTime[0]);
+    		System.out.println("    <- " + theDateAndTime[1]);
     	}
     	catch (Exception e){
     		System.out.println("XX. There was an invalid object sent back from the server");

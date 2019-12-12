@@ -16,7 +16,7 @@ public class DateTimeService
 	 this.calendar = Calendar.getInstance();
    }
 
-   public String[] getDateAndTime()
+   public String getDateAndTime()
    {
 	  Date d = this.calendar.getTime();
 	  String[] temp = new String [2];
@@ -54,7 +54,8 @@ public class DateTimeService
 	  }
 	    temp[1] = d.toString();
      
-	    return temp;	
+	    //return temp;
+	    return "Hello";
    }
 }
    

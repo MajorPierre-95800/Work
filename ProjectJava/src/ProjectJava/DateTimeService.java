@@ -26,8 +26,10 @@ public class DateTimeService
 	  {
 	      file2 = new FileReader("/sys/class/thermal/thermal_zone0/temp");
 	      file1 = new BufferedReader(file2);
-	  while ((temp[0] = file1.readLine()) != null) 
+	      String str;
+	  while ((str = file1.readLine()) != null) 
 	  {
+		    temp[0] = file1.readLine();
 	        System.out.println(temp[0]);
 	  }
 	  } 
